@@ -1,0 +1,39 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* Variables CSS */
+:root {
+    /* Default Colors */
+    --primary-color: #0A0826;
+    --secondary-color: #E02C6D;
+    --dark-color: #000000;
+    --light-color: #FFFFFF;
+    --light-gray-color: #6C6C6C;
+    --footer-bg-color: #0A0826;
+
+    /* Font and Typo */
+    --large-heading: 52px;
+    --medium-heding: 38px;
+    --small-heading: 28px;
+    --x-small-heading: 24px;
+    --body-text: 16px;
+    --small-text: 14px;
+
+    /* Box Shadow */
+    --shadow-color: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Layout and Base CSS */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
