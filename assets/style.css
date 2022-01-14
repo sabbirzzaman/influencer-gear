@@ -41,15 +41,59 @@ a {
     color: var(--primary-color);
 }
 
+p {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: var(--large-heading);
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: var(--medium-heding);
+    line-height: 60px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: var(--small-heading);
+    line-height: 40px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: var(--x-small-heading);
+    line-height: 40px;
+    font-weight: 500;
+}
+
+a.button {
+    display: inline-block;
+    background: var(--secondary-color);
+    padding: 10px 24px;
+    color: var(--light-color);
+    border-radius: 40px;
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 50px 0;
+}
+
+header .container, .hero-area .container {
+    padding: 0; /* Removed padding from header and hero */
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 
 /* Header CSS */
 header {
@@ -61,13 +105,15 @@ header {
     font-weight: 700;
 }
 
-nav, .menu-icon {
+nav,
+.menu-icon {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-.site-logo, .menu-icon i {
+.site-logo,
+.menu-icon i {
     cursor: pointer;
 }
 
@@ -75,4 +121,32 @@ nav, .menu-icon {
     list-style: none;
     display: flex;
     gap: 30px;
+}
+
+/* Hero Area CSS */
+.hero-flex {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+}
+
+.hero-image {
+    background-image: url('../images/circle-design.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Brand Area CSS */
+.brand-images {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 30px 0;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, rgba(192, 204, 218, 0.10), rgba(192, 204, 218, 0.60), rgba(192, 204, 218, 0.10));
+    border-image-slice: 1;
 }
