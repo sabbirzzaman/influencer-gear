@@ -6,7 +6,6 @@
     /* Default Colors */
     --primary-color: #3A3A3A;
     --secondary-color: #E02C6D;
-    --dark-color: #000000;
     --light-color: #FFFFFF;
     --light-gray-color: #6C6C6C;
     --footer-bg-color: #0A0826;
@@ -56,22 +55,27 @@ h2 {
     font-size: var(--medium-heding);
     line-height: 60px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: var(--small-heading);
     line-height: 40px;
     font-weight: 700;
+    margin-bottom: 8px;
 }
 
 h4 {
     font-size: var(--x-small-heading);
     line-height: 40px;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
-a.button {
-    display: inline-block;
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: var(--secondary-color);
     padding: 10px 24px;
     color: var(--light-color);
@@ -80,6 +84,12 @@ a.button {
 
 .container {
     max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.product-container {
+    max-width: 1047px;
     margin: 0 auto;
     padding: 50px 0;
 }
@@ -149,4 +159,75 @@ nav,
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, rgba(192, 204, 218, 0.10), rgba(192, 204, 218, 0.60), rgba(192, 204, 218, 0.10));
     border-image-slice: 1;
+}
+
+/* Product Area */
+.product-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.item {
+    background-color: var(--light-color);
+    box-shadow: var(--shadow-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.item img {
+    margin-bottom: 10px;
+}
+
+.product-rating .fas, 
+.product-rating span, 
+.product-info p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: var(--light-gray-color);
+}
+
+.product-rating {
+    margin-bottom: 8px;
+}
+
+.fas.filled {
+    color: rgb(251, 130, 0);
+}
+
+.fas.empty {
+    color: rgba(108, 108, 108, 0.25);
+}
+
+.product-more a {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--light-color);
+    text-align: center;
+}
+
+.copyright-text {
+    font-weight: 500;
+}
+
+.footer-social a i {
+    color: var(--light-color);
+    margin: 0 8px;
+    background-color: #22203b;
+    padding: 10px;
+    border-radius: 50px;
 }
