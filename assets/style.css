@@ -88,7 +88,7 @@ h4 {
     padding: 50px 0;
 }
 
-.product-container {
+.s-container {
     max-width: 1047px;
     margin: 0 auto;
     padding: 50px 0;
@@ -161,6 +161,10 @@ nav,
     border-image-slice: 1;
 }
 
+.brand-images img {
+    cursor: pointer;
+}
+
 /* Product Area */
 .product-title {
     text-align: center;
@@ -212,6 +216,36 @@ nav,
     gap: 8px;
     justify-content: flex-end;
 }
+
+/* Newsletter CSS */
+.newsletter-card {
+    padding: 40px 80px;
+    box-shadow: var(--shadow-color);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px 24px;
+    border: 1px solid rgba(192, 204, 218, 0.6);
+    border-radius: 40px 0 0 40px;
+}
+
+.newsletter-form input[type="email"]:focus {
+    outline: none;
+}
+
+.newsletter-form input[type="button"] {
+    cursor: pointer;
+    border: none;
+    border-radius: 0 40px 40px 0;
+}
+
 
 /* Footer Styles */
 .footer {
