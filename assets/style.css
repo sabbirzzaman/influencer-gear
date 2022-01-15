@@ -301,6 +301,8 @@ nav,
 
 .newsletter-form input[type="email"] {
     padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 600;
     border: 1px solid rgba(192, 204, 218, 0.6);
     border-radius: 40px 0 0 40px;
 }
@@ -311,6 +313,8 @@ nav,
 
 .newsletter-form input[type="button"] {
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
     border: none;
     border-radius: 0 40px 40px 0;
 }
