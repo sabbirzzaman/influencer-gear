@@ -42,6 +42,7 @@ a {
     color: var(--primary-color);
 }
 
+
 p {
     margin-bottom: 15px;
 }
@@ -149,6 +150,13 @@ nav,
     cursor: pointer;
 }
 
+.menu-icon i {
+    transition: color .2s ease-in-out;
+}
+.menu-icon i:hover {
+    color: var(--secondary-color);
+}
+
 .menu {
     list-style: none;
     display: flex;
@@ -157,7 +165,11 @@ nav,
 
 .menu li a {
     position: relative;
-    margin-bottom: 10px;
+    transition: color .2s ease-in-out;
+}
+
+.menu li a:hover {
+    color: var(--secondary-color);
 }
 
 .menu li a::before {
